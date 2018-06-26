@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YMz-95-7Sm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Progress Indicator View Controller-->
+        <scene sceneID="VXy-LB-VfZ">
+            <objects>
+                <viewController storyboardIdentifier="ProgressIndicatorViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YMz-95-7Sm" customClass="ProgressIndicatorViewController" customModule="GapstaffHealthCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PwS-pn-EFs"/>
+                        <viewControllerLayoutGuide type="bottom" id="LKI-VC-PwQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a1h-HP-fan">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Att-vr-23c">
+                                <rect key="frame" x="158" y="304.5" width="60.5" height="59"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="qUy-pG-W6H">
+                                        <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                        <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iex-UF-Nft">
+                                        <rect key="frame" x="10" y="45" width="40.5" height="9"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Iex-UF-Nft" firstAttribute="centerX" secondItem="Att-vr-23c" secondAttribute="centerX" id="6N1-ne-jkl"/>
+                                    <constraint firstItem="qUy-pG-W6H" firstAttribute="centerX" secondItem="Att-vr-23c" secondAttribute="centerX" id="7qq-xM-jYW"/>
+                                    <constraint firstItem="Iex-UF-Nft" firstAttribute="top" secondItem="qUy-pG-W6H" secondAttribute="bottom" constant="5" id="AJy-Ls-fEG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iex-UF-Nft" secondAttribute="bottom" constant="5" id="CLH-mo-jXy"/>
+                                    <constraint firstItem="qUy-pG-W6H" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Att-vr-23c" secondAttribute="top" constant="20" id="DRR-SP-e2M"/>
+                                    <constraint firstItem="qUy-pG-W6H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Att-vr-23c" secondAttribute="leading" constant="20" id="rhB-nW-dRK"/>
+                                    <constraint firstItem="qUy-pG-W6H" firstAttribute="centerY" secondItem="Att-vr-23c" secondAttribute="centerY" id="suc-yd-NO6"/>
+                                    <constraint firstItem="Iex-UF-Nft" firstAttribute="leading" secondItem="Att-vr-23c" secondAttribute="leading" constant="10" id="tpV-rS-Xsl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Att-vr-23c" firstAttribute="centerY" secondItem="a1h-HP-fan" secondAttribute="centerY" id="MDZ-bI-Dyi"/>
+                            <constraint firstItem="Att-vr-23c" firstAttribute="centerX" secondItem="a1h-HP-fan" secondAttribute="centerX" id="Q9N-kO-ZVf"/>
+                            <constraint firstItem="Att-vr-23c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a1h-HP-fan" secondAttribute="leading" constant="50" id="rbb-Oc-bla"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="a1a-e2-goB" appends="YES" id="wND-16-HLd"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="qUy-pG-W6H" id="6Bw-DE-50q"/>
+                        <outlet property="contentView" destination="Att-vr-23c" id="YNO-GA-pc8"/>
+                        <outlet property="messageLabel" destination="Iex-UF-Nft" id="aKD-wT-w4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iZ-bt-gyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="a1a-e2-goB">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="YMz-95-7Sm" id="hga-Du-DA4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-696"/>
+        </scene>
+        <!--No Data View Controller-->
+        <scene sceneID="nCR-6h-7t3">
+            <objects>
+                <viewController storyboardIdentifier="NoDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LJ5-oh-XG0" customClass="NoDataViewController" customModule="GapstaffHealthCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cnq-rd-beF"/>
+                        <viewControllerLayoutGuide type="bottom" id="1tr-c8-GcH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fju-ff-uTu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7w-Ra-hnf">
+                                <rect key="frame" x="20" y="323.5" width="335" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T7w-Ra-hnf" firstAttribute="centerX" secondItem="fju-ff-uTu" secondAttribute="centerX" id="KYb-V6-zMJ"/>
+                            <constraint firstItem="T7w-Ra-hnf" firstAttribute="centerY" secondItem="fju-ff-uTu" secondAttribute="centerY" id="TU2-4q-OH1"/>
+                            <constraint firstItem="T7w-Ra-hnf" firstAttribute="leading" secondItem="fju-ff-uTu" secondAttribute="leading" constant="20" id="mSx-P9-yo4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="T7w-Ra-hnf" id="B8L-i4-hnp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTo-tY-1Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2543" y="-697"/>
+        </scene>
+    </scenes>
+</document>
