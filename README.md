@@ -1,5 +1,5 @@
 # VNHProgressIndicator
-Progress Indicator with Default activity indicator, With or without text(ie Loading...), with different theme. 
+Progress/Activity indicator with UIActivityIndicatorView, different themes(i.e light and dark).
 
 # There are several method
 
