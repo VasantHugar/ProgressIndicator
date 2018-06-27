@@ -17,7 +17,7 @@
         <!--Progress Indicator View Controller-->
         <scene sceneID="VXy-LB-VfZ">
             <objects>
-                <viewController storyboardIdentifier="ProgressIndicatorViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YMz-95-7Sm" customClass="ProgressIndicatorViewController" customModule="GapstaffHealthCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProgressIndicatorViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YMz-95-7Sm" customClass="ProgressIndicatorViewController" customModule="VNHProgressIndicator_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PwS-pn-EFs"/>
                         <viewControllerLayoutGuide type="bottom" id="LKI-VC-PwQ"/>
@@ -85,41 +85,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1521" y="-696"/>
-        </scene>
-        <!--No Data View Controller-->
-        <scene sceneID="nCR-6h-7t3">
-            <objects>
-                <viewController storyboardIdentifier="NoDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LJ5-oh-XG0" customClass="NoDataViewController" customModule="GapstaffHealthCare" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Cnq-rd-beF"/>
-                        <viewControllerLayoutGuide type="bottom" id="1tr-c8-GcH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fju-ff-uTu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7w-Ra-hnf">
-                                <rect key="frame" x="20" y="323.5" width="335" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="T7w-Ra-hnf" firstAttribute="centerX" secondItem="fju-ff-uTu" secondAttribute="centerX" id="KYb-V6-zMJ"/>
-                            <constraint firstItem="T7w-Ra-hnf" firstAttribute="centerY" secondItem="fju-ff-uTu" secondAttribute="centerY" id="TU2-4q-OH1"/>
-                            <constraint firstItem="T7w-Ra-hnf" firstAttribute="leading" secondItem="fju-ff-uTu" secondAttribute="leading" constant="20" id="mSx-P9-yo4"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="messageLabel" destination="T7w-Ra-hnf" id="B8L-i4-hnp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VTo-tY-1Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2543" y="-697"/>
         </scene>
     </scenes>
 </document>
