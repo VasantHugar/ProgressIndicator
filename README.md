@@ -21,3 +21,12 @@ Progress/Activity indicator with UIActivityIndicatorView, different themes(i.e l
 * Copy ProgressIndicator folder from demo project
 * Show: ``` ProgressIndicator.show() ```
 * Hide: ``` ProgressIndicator.hide() ```
+
+### Code
+
+```
+ProgressIndicator.show(onView: self.view, theme: .dark)
+Request.getEmployees {
+   ProgressIndicator.hide(fromView: self.view)
+}
+```
