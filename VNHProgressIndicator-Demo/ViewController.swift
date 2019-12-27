@@ -15,8 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         ProgressIndicator.show()
-        perform(#selector(hide), with: nil, afterDelay: 0.60)
-        
+        perform(#selector(hide), with: nil, afterDelay: 5)
     }
     
     override func didReceiveMemoryWarning() {

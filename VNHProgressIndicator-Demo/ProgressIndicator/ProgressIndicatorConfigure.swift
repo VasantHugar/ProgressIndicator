@@ -70,12 +70,12 @@ extension ProgressIndicatorConfigure {
     }
 }
 
-fileprivate extension ProgressIndicatorConfigure {
+private extension ProgressIndicatorConfigure {
     
     /// Remove Active view
     ///
     /// - Parameter view: UIView
-    fileprivate func removeActiveView(from view: UIView?) {
+    func removeActiveView(from view: UIView?) {
         if let fromView = view, let view = fromView.activeContentView {
             view.removeFromSuperview()
         }
@@ -87,8 +87,8 @@ fileprivate extension ProgressIndicatorConfigure {
     }
 }
 
-fileprivate extension UIView {
-    fileprivate var activeContentView: UIView? {
+private extension UIView {
+    var activeContentView: UIView? {
         return viewWithTag(INDICATOR_VIEW_TAG)
     }
 }
