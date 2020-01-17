@@ -6,9 +6,10 @@
 //  Copyright © 2018 Gapstaff. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum ProgressIndicatorTheme {
     case light
     case dark
+	case custom(backgoundColor: UIColor, contentColor: UIColor)
 }

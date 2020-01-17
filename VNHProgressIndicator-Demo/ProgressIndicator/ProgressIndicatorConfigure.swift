@@ -11,16 +11,16 @@ fileprivate let INDICATOR_VIEW_TAG = 5000
 
 class ProgressIndicatorConfigure {
     
-    fileprivate var progressIndicatorVC: ProgressIndicatorViewController? {
-        return UIStoryboard(name: "ProgressIndicator", bundle: nil).instantiateInitialViewController() as? ProgressIndicatorViewController
-    }
+	lazy var progressIndicatorVC: ProgressIndicatorViewController? = {
+        return ProgressIndicatorViewController()
+    }()
     
-    fileprivate var rootVC: UIViewController? {
+    lazy var rootVC: UIViewController? = {
         guard let window = UIApplication.shared.keyWindow, let rootVC = window.rootViewController else {
             return nil
         }
         return rootVC
-    }
+    }()
 }
 
 extension ProgressIndicatorConfigure {
@@ -51,11 +51,9 @@ extension ProgressIndicatorConfigure {
                     contentView.frame = onView.bounds
                     onView.addSubview(contentView)
                 }
-                else {
-                    if let rootVC = self.rootVC {
-                        rootVC.view.addSubview(contentView)
-                    }
-                }
+				else if let rootVC = self.rootVC {
+					rootVC.view.addSubview(contentView)
+				}
             }
         }
     }
@@ -71,7 +69,6 @@ extension ProgressIndicatorConfigure {
 }
 
 private extension ProgressIndicatorConfigure {
-    
     /// Remove Active view
     ///
     /// - Parameter view: UIView

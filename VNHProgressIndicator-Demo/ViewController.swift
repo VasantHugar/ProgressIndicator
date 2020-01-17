@@ -9,21 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        ProgressIndicator.show()
-        perform(#selector(hide), with: nil, afterDelay: 5)
+        start()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @objc func hide() {
+
+	@IBAction func startAction(_ sender: Any) {
+		start()
+	}
+
+	func start() {
+		ProgressIndicator.show("Loading...",
+							   theme: .custom(backgoundColor: .yellow, contentColor: .red))
+		perform(#selector(stop), with: nil, afterDelay: 5)
+	}
+
+    @objc func stop() {
         ProgressIndicator.hide()
     }
 }

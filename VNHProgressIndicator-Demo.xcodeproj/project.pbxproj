@@ -12,7 +12,6 @@
 		88C4189720E27CE4007B47B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C4189520E27CE4007B47B7 /* Main.storyboard */; };
 		88C4189920E27CE4007B47B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C4189820E27CE4007B47B7 /* Assets.xcassets */; };
 		88C4189C20E27CE4007B47B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C4189A20E27CE4007B47B7 /* LaunchScreen.storyboard */; };
-		88C418AB20E27CF4007B47B7 /* ProgressIndicator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C418A520E27CF4007B47B7 /* ProgressIndicator.storyboard */; };
 		88C418AC20E27CF4007B47B7 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A620E27CF4007B47B7 /* ProgressIndicator.swift */; };
 		88C418AD20E27CF4007B47B7 /* ProgressIndicatorConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A720E27CF4007B47B7 /* ProgressIndicatorConfigure.swift */; };
 		88C418AE20E27CF4007B47B7 /* ProgressIndicatorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A820E27CF4007B47B7 /* ProgressIndicatorTheme.swift */; };
@@ -27,7 +26,6 @@
 		88C4189820E27CE4007B47B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88C4189B20E27CE4007B47B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88C4189D20E27CE4007B47B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88C418A520E27CF4007B47B7 /* ProgressIndicator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProgressIndicator.storyboard; sourceTree = "<group>"; };
 		88C418A620E27CF4007B47B7 /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		88C418A720E27CF4007B47B7 /* ProgressIndicatorConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorConfigure.swift; sourceTree = "<group>"; };
 		88C418A820E27CF4007B47B7 /* ProgressIndicatorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorTheme.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 		88C418A320E27CF4007B47B7 /* ProgressIndicator */ = {
 			isa = PBXGroup;
 			children = (
-				88C418A520E27CF4007B47B7 /* ProgressIndicator.storyboard */,
 				88C418A620E27CF4007B47B7 /* ProgressIndicator.swift */,
 				88C418A720E27CF4007B47B7 /* ProgressIndicatorConfigure.swift */,
 				88C418A820E27CF4007B47B7 /* ProgressIndicatorTheme.swift */,
@@ -147,7 +144,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C4189C20E27CE4007B47B7 /* LaunchScreen.storyboard in Resources */,
-				88C418AB20E27CF4007B47B7 /* ProgressIndicator.storyboard in Resources */,
 				88C4189920E27CE4007B47B7 /* Assets.xcassets in Resources */,
 				88C4189720E27CE4007B47B7 /* Main.storyboard in Resources */,
 			);
