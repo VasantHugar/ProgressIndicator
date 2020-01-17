@@ -15,7 +15,7 @@
 		88C418AC20E27CF4007B47B7 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A620E27CF4007B47B7 /* ProgressIndicator.swift */; };
 		88C418AD20E27CF4007B47B7 /* ProgressIndicatorConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A720E27CF4007B47B7 /* ProgressIndicatorConfigure.swift */; };
 		88C418AE20E27CF4007B47B7 /* ProgressIndicatorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A820E27CF4007B47B7 /* ProgressIndicatorTheme.swift */; };
-		88C418AF20E27CF4007B47B7 /* ProgressIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A920E27CF4007B47B7 /* ProgressIndicatorViewController.swift */; };
+		88C418AF20E27CF4007B47B7 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C418A920E27CF4007B47B7 /* ProgressIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		88C418A620E27CF4007B47B7 /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		88C418A720E27CF4007B47B7 /* ProgressIndicatorConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorConfigure.swift; sourceTree = "<group>"; };
 		88C418A820E27CF4007B47B7 /* ProgressIndicatorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorTheme.swift; sourceTree = "<group>"; };
-		88C418A920E27CF4007B47B7 /* ProgressIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorViewController.swift; sourceTree = "<group>"; };
+		88C418A920E27CF4007B47B7 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				88C418A620E27CF4007B47B7 /* ProgressIndicator.swift */,
 				88C418A720E27CF4007B47B7 /* ProgressIndicatorConfigure.swift */,
 				88C418A820E27CF4007B47B7 /* ProgressIndicatorTheme.swift */,
-				88C418A920E27CF4007B47B7 /* ProgressIndicatorViewController.swift */,
+				88C418A920E27CF4007B47B7 /* ProgressIndicatorView.swift */,
 			);
 			path = ProgressIndicator;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C418AC20E27CF4007B47B7 /* ProgressIndicator.swift in Sources */,
-				88C418AF20E27CF4007B47B7 /* ProgressIndicatorViewController.swift in Sources */,
+				88C418AF20E27CF4007B47B7 /* ProgressIndicatorView.swift in Sources */,
 				88C418AE20E27CF4007B47B7 /* ProgressIndicatorTheme.swift in Sources */,
 				88C418AD20E27CF4007B47B7 /* ProgressIndicatorConfigure.swift in Sources */,
 				88C4189420E27CE4007B47B7 /* ViewController.swift in Sources */,

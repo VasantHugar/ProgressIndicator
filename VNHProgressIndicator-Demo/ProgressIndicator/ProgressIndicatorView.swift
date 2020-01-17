@@ -1,6 +1,6 @@
 //
-//  ProgressIndicatorViewController.swift
-//  GapstaffHealthCare
+//  ProgressIndicatorView.swift
+//  ProgressIndicator
 //
 //  Created by Vasant Hugar on 26/06/18.
 //  Copyright © 2018 Gapstaff. All rights reserved.
@@ -8,22 +8,34 @@
 
 import UIKit
 
-class ProgressIndicatorViewController: UIViewController {
+class ProgressIndicatorView: UIView {
 
     private weak var contentView: UIView?
     private weak var messageLabel: UILabel?
     private weak var activityIndicator: UIActivityIndicatorView?
+
+	private var tapGesture: UITapGestureRecognizer?
     
     var message = ""
     var theme: ProgressIndicatorTheme = .light
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-		setAutolayoutForContentView()
-		view.backgroundColor = .clear
 
+	override func draw(_ rect: CGRect) {
+		super.draw(frame)
+		initalSetUp()
+	}
+
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+	}
+
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+
+    private func initalSetUp() {
+		setAutolayoutForContentView()
+
+		backgroundColor = .clear
 		messageLabel?.text = message
 
 		switch theme {
@@ -45,29 +57,28 @@ class ProgressIndicatorViewController: UIViewController {
 			activityIndicator?.color = contentColor
 			break
 		}
+
+		tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGestureAction(_:)))
+		tapGesture?.numberOfTapsRequired = 3
+		addGestureRecognizer(tapGesture!)
     }
     
-    @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
+	@objc func tapGestureAction(_ sender: UITapGestureRecognizer) {
         ProgressIndicator.hide()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 	private func setAutolayoutForContentView() {
 		let tempContentView = UIView()
 		tempContentView.layer.cornerRadius = 5
 		tempContentView.layer.masksToBounds = true
-        self.view.addSubview(tempContentView)
+        self.addSubview(tempContentView)
         tempContentView.translatesAutoresizingMaskIntoConstraints = false
 
-        self.view.addConstraints([
+        self.addConstraints([
 			NSLayoutConstraint(item: tempContentView,
 							   attribute: .centerX,
 							   relatedBy: .equal,
-							   toItem: self.view,
+							   toItem: self,
 							   attribute: .centerX,
 							   multiplier: 1,
 							   constant: 0),
@@ -75,7 +86,7 @@ class ProgressIndicatorViewController: UIViewController {
 			NSLayoutConstraint(item: tempContentView,
 							   attribute: .centerY,
 							   relatedBy: .equal,
-							   toItem: self.view,
+							   toItem: self,
 							   attribute: .centerY,
 							   multiplier: 1,
 							   constant: 0),
@@ -83,7 +94,7 @@ class ProgressIndicatorViewController: UIViewController {
 			NSLayoutConstraint(item: tempContentView,
 							   attribute: .leading,
 							   relatedBy: .greaterThanOrEqual,
-							   toItem: self.view,
+							   toItem: self,
 							   attribute: .leading,
 							   multiplier: 1,
 							   constant: 50),

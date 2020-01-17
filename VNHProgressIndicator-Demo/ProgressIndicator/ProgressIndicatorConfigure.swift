@@ -11,11 +11,11 @@ fileprivate let INDICATOR_VIEW_TAG = 5000
 
 class ProgressIndicatorConfigure {
     
-	lazy var progressIndicatorVC: ProgressIndicatorViewController? = {
-        return ProgressIndicatorViewController()
+	private lazy var progressIndicatorVC: ProgressIndicatorView? = {
+        return ProgressIndicatorView()
     }()
     
-    lazy var rootVC: UIViewController? = {
+    private lazy var rootVC: UIViewController? = {
         guard let window = UIApplication.shared.keyWindow, let rootVC = window.rootViewController else {
             return nil
         }
@@ -42,17 +42,18 @@ extension ProgressIndicatorConfigure {
                 // Set Theme
                 IVC.theme = theme ?? .light
                 
-                guard let contentView = IVC.view else { return }
-                contentView.tag = INDICATOR_VIEW_TAG
+//                guard let contentView = IVC.view else { return }
+                IVC.tag = INDICATOR_VIEW_TAG
                 
                 self.removeActiveView(from: onView)
                 
                 if let onView = onView {
-                    contentView.frame = onView.bounds
-                    onView.addSubview(contentView)
+                    IVC.frame = onView.bounds
+                    onView.addSubview(IVC)
                 }
 				else if let rootVC = self.rootVC {
-					rootVC.view.addSubview(contentView)
+					IVC.frame = rootVC.view.bounds
+					rootVC.view.addSubview(IVC)
 				}
             }
         }
